@@ -26,6 +26,7 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ buttons }) => {
         <HeaderButton
           key={index}
           isActive={activeButton === index}
+          icon={button.props.icon}
           onClick={() => handleButtonClick(index)}
           {...button.props}
         />
