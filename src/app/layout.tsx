@@ -1,20 +1,26 @@
 "use client";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import React, { useEffect, useState } from "react";
-
-const inter = Inter({ subsets: ["latin"] });
+import Loader from "@/components/common/Loader";
+import "@/css/style.css";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  useEffect(() => {}, []);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1000);
+  }, []);
 
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body suppressHydrationWarning={true}>
+        <div className="dark:bg-boxdark-2 dark:text-bodydark">
+          {loading ? <Loader /> : children}
+        </div>
+      </body>
     </html>
   );
 }
