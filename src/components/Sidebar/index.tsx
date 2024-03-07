@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import ExpensesIncome from "./ExpensesIncome";
 import SpendingCard from "./Spending";
+import PremiumCard from "./Premium";
 interface SidebarProps {
   sidebarOpen: boolean;
   setSidebarOpen: (arg: boolean) => void;
@@ -76,6 +77,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
       >
         <ExpensesIncome />
         <SpendingCard />
+        <PremiumCard />
       </div>
     </aside>
   );

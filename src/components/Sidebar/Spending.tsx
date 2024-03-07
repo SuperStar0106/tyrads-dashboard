@@ -10,33 +10,33 @@ import {
 
 const spendingData: Spending[] = [
   {
-    avatar: "/images/user/user-01.png",
-    name: "Devid Heilo",
+    avatar: "/images/spending/online-shopping.png",
+    name: "Online store",
     date: "May 30, 2023 at 08:00 pm",
   },
   {
-    avatar: "/images/user/user-02.png",
-    name: "Henry Fisher",
+    avatar: "/images/spending/police-station.png",
+    name: "Pay the hospital",
     date: "May 28, 2023 at 10:00 pm",
   },
   {
-    avatar: "/images/user/user-04.png",
-    name: "Jhon Doe",
+    avatar: "/images/spending/money.png",
+    name: "Tickets",
     date: "May 10, 2023 at 12:00 pm",
   },
   {
-    avatar: "/images/user/user-05.png",
-    name: "Jane Doe",
+    avatar: "/images/spending/online-shopping.png",
+    name: "Online store",
     date: "May 8, 2023 at 11:00 pm",
   },
   {
-    avatar: "/images/user/user-01.png",
-    name: "Jhon Doe",
+    avatar: "/images/spending/police-station.png",
+    name: "Pay the hospital",
     date: "May 5, 2023 at 10:00 pm",
   },
   {
-    avatar: "/images/user/user-03.png",
-    name: "Jhon Doe",
+    avatar: "/images/spending/money.png",
+    name: "Tickets",
     date: "May 2, 2023 at 08:00 pm",
   },
 ];
