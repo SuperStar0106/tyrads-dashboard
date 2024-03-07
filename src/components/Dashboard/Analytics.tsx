@@ -4,40 +4,44 @@ import ReactApexChart from "react-apexcharts";
 
 const AnalyticsCard: React.FC = () => {
   const options: ApexOptions = {
-    series: [76],
+    series: [76, 20, 60],
     chart: {
-      type: "radialBar",
-      offsetY: -20,
+      type: "donut",
+      offsetY: 0,
       sparkline: {
         enabled: true,
       },
     },
+    legend: {
+      show: true,
+      position: "bottom",
+    },
+    yaxis: {
+      show: true,
+      min: 0,
+      max: 100,
+      labels: {
+        show: true,
+        formatter: function (val) {
+          return val + "%";
+        },
+      },
+    },
     plotOptions: {
-      radialBar: {
+      pie: {
+        donut: {
+          size: "85%",
+          labels: {
+            show: true,
+            total: {
+              showAlways: true,
+              show: true,
+              label: "Total",
+            },
+          },
+        },
         startAngle: -90,
         endAngle: 90,
-        track: {
-          background: "#e7e7e7",
-          strokeWidth: "97%",
-          margin: 5, // margin is in pixels
-          dropShadow: {
-            enabled: true,
-            top: 2,
-            left: 0,
-            color: "#999",
-            opacity: 1,
-            blur: 2,
-          },
-        },
-        dataLabels: {
-          name: {
-            show: false,
-          },
-          value: {
-            offsetY: -2,
-            fontSize: "22px",
-          },
-        },
       },
     },
     grid: {
@@ -56,7 +60,7 @@ const AnalyticsCard: React.FC = () => {
         stops: [0, 50, 53, 91],
       },
     },
-    labels: ["Average Results"],
+    labels: ["Done", "In progress", "To do"],
   };
 
   return (
@@ -72,7 +76,7 @@ const AnalyticsCard: React.FC = () => {
             <ReactApexChart
               options={options}
               series={options.series}
-              type="radialBar"
+              type="donut"
               height={"100%"}
               width={"100%"}
             />
