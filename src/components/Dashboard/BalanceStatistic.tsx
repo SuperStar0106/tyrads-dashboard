@@ -141,7 +141,7 @@ const BalanceStaticCard: React.FC = () => {
   handleReset;
 
   return (
-    <div className="w-full col-span-12 rounded-2xl border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
+    <div className="col-span-12 rounded-2xl border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-7">
       <div className="justify-between gap-4 sm:flex">
         <h4 className="text-sm font-semibold text-black dark:text-white">
           Balance statistics

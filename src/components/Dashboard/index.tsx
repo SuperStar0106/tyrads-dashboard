@@ -1,7 +1,10 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import BalanceStaticCard from "./BalanceStatistic";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import BalanceStaticCard from "./BalanceStatistic";
+import VisaCard from "./Visa";
+import BuyItemsCard from "./BuyItems";
+import MessageCard from "./Message";
 
 const Dashboard: React.FC = () => {
   const [showSearch, setShowSearch] = useState<boolean>(false);
@@ -57,9 +60,13 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex h-59 w-full">
+      <div className="grid grid-cols-12 h-59 gap-4 mb-4">
         <BalanceStaticCard />
-        <BalanceStaticCard />
+        <VisaCard />
+      </div>
+      <div className="grid grid-cols-12 h-59">
+        <BuyItemsCard />
+        <MessageCard />
       </div>
     </div>
   );
