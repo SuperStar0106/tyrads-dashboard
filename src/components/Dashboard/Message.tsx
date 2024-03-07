@@ -38,7 +38,13 @@ const MessageCard: React.FC = () => {
       </div>
       <div className="flex flex-col h-full">
         <div className="flex antialiased text-gray-800">
-          <div className="flex flex-row h-full w-full overflow-x-hidden">
+          <div
+            className="flex flex-row h-full w-full overflow-x-hidden"
+            style={{
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+            }}
+          >
             <div className="flex flex-col flex-auto h-full">
               <div className="flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-gray-100 h-full">
                 <div className="flex flex-col h-full overflow-x-auto mb-4">
