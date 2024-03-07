@@ -5,6 +5,8 @@ import BalanceStaticCard from "./BalanceStatistic";
 import VisaCard from "./Visa";
 import BuyItemsCard from "./BuyItems";
 import MessageCard from "./Message";
+import TransactionCard from "./Transaction";
+import AnalyticsCard from "./Analytics";
 
 const Dashboard: React.FC = () => {
   const [showSearch, setShowSearch] = useState<boolean>(false);
@@ -64,9 +66,13 @@ const Dashboard: React.FC = () => {
         <BalanceStaticCard />
         <VisaCard />
       </div>
-      <div className="grid grid-cols-12 h-59">
+      <div className="grid grid-cols-12 h-59 mb-19">
         <BuyItemsCard />
         <MessageCard />
+      </div>
+      <div className="grid grid-cols-12 gap-4">
+        <TransactionCard />
+        <AnalyticsCard />
       </div>
     </div>
   );
