@@ -69,7 +69,7 @@ const TransactionCard = () => {
             key={key}
           >
             <div className="flex justify-between w-full">
-              <div className="flex">
+              <div className="flex gap-3 items-center">
                 <div className="relative h-10 w-10 rounded-full">
                   <Image
                     width={56}

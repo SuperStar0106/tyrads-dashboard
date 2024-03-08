@@ -10,7 +10,7 @@ const PremiumCard: React.FC = () => {
           Go to premium
         </h4>
         <Image
-          src="/images/premium/premium.png"
+          src="/images/premium/crown.png"
           alt="Premium"
           width={100}
           height={100}

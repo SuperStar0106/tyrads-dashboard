@@ -49,11 +49,19 @@ const options: ApexOptions = {
     axisTicks: {
       show: false,
     },
+    labels: {
+      style: {
+        colors: "gray",
+      },
+    },
   },
   yaxis: {
     tickAmount: 4,
     labels: {
       formatter: (value: number) => `${value}$`,
+      style: {
+        colors: ["gray"],
+      },
     },
   },
   legend: {

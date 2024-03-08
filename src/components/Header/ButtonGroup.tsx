@@ -21,7 +21,7 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ buttons }) => {
   };
 
   return (
-    <ul className="flex flex-col items-center gap-5 bg-slate-200 p-1 rounded-full">
+    <ul className="flex flex-col items-center gap-5 bg-slate-200 p-1 rounded-full dark:bg-slate-900">
       {buttons.map((button, index) => (
         <HeaderButton
           key={index}

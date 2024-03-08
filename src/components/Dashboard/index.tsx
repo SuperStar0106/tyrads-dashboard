@@ -49,12 +49,12 @@ const Dashboard: React.FC = () => {
               <input
                 type="text"
                 placeholder="Search..."
-                className="w-full px-4 py-2 border-none rounded-full focus:outline-none"
+                className="w-full px-4 py-2 border-none rounded-full focus:outline-none dark:bg-slate-600"
               />
             </div>
           )}
           <div
-            className="flex items-center justify-center text-center rounded-full hover:cursor-pointer hover:bg-slate-300 bg-white w-10 h-10 p-2"
+            className="flex items-center justify-center text-center rounded-full hover:cursor-pointer hover:bg-slate-300 bg-white dark:bg-slate-600 w-10 h-10 p-2"
             ref={iconRef}
             onClick={() => setShowSearch(!showSearch)}
           >
@@ -62,15 +62,15 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-12 h-59 gap-4 mb-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4">
         <BalanceStaticCard />
         <VisaCard />
       </div>
-      <div className="grid grid-cols-12 h-59 mb-19">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 xl:grid-cols-12 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-0">
         <BuyItemsCard />
         <MessageCard />
       </div>
-      <div className="grid grid-cols-12 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4">
         <TransactionCard />
         <AnalyticsCard />
       </div>

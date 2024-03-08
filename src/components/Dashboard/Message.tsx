@@ -30,7 +30,7 @@ const MessageCard: React.FC = () => {
   };
 
   return (
-    <div className="col-span-12 rounded-r-2xl border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-6">
+    <div className="col-span-12 sm:rounded-2xl md:rounded-2xl lg:rounded-2xl xl:rounded-l-none border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-6">
       <div className="justify-between gap-4 sm:flex pb-3">
         <h4 className="text-sm font-semibold text-black dark:text-white">
           Esther Howard
@@ -58,7 +58,7 @@ const MessageCard: React.FC = () => {
                             height={40}
                             alt="UserA"
                           />
-                          <div className="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
+                          <div className="relative ml-3 text-sm bg-white dark:bg-slate-800 py-2 px-4 shadow rounded-xl">
                             <div>Hey How are you today?</div>
                           </div>
                         </div>
@@ -71,7 +71,7 @@ const MessageCard: React.FC = () => {
                             height={40}
                             alt="UserA"
                           />
-                          <div className="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl">
+                          <div className="relative mr-3 text-sm bg-indigo-100 dark:bg-slate-700 py-2 px-4 shadow rounded-xl">
                             <div>Im ok what about you?</div>
                           </div>
                         </div>
@@ -79,13 +79,13 @@ const MessageCard: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4">
-                  <div className="flex-grow ml-4">
-                    <div className="relative w-full bg-slate-200 rounded-xl">
+                <div className="flex flex-row items-center h-16 rounded-xl w-full">
+                  <div className="flex-grow ml-4 w-full">
+                    <div className="relative w-full bg-slate-200 dark:bg-slate-900 rounded-xl">
                       <input
                         type="text"
                         placeholder="Type your message"
-                        className="flex w-full rounded-xl focus:outline-none focus:border-indigo-300 pl-4 h-10 bg-slate-200"
+                        className="flex w-full rounded-xl focus:outline-none focus:border-indigo-300 pl-4 h-10 bg-slate-200 dark:bg-slate-900"
                       />
                       <div className="flex justify-between mr-2 ml-2 pb-3">
                         <div className="flex items-center">

@@ -15,16 +15,8 @@ const AnalyticsCard: React.FC = () => {
     legend: {
       show: true,
       position: "bottom",
-    },
-    yaxis: {
-      show: true,
-      min: 0,
-      max: 100,
       labels: {
-        show: true,
-        formatter: function (val) {
-          return val + "%";
-        },
+        colors: "gray",
       },
     },
     plotOptions: {

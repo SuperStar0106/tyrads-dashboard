@@ -26,7 +26,7 @@ const BuyItemsCard: React.FC = () => {
   };
 
   return (
-    <div className="col-span-12 rounded-l-2xl border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-6">
+    <div className="col-span-12 sm:rounded-2xl md:rounded-2xl lg:rounded-2xl xl:rounded-l-2xl xl:rounded-r-none border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-6">
       <div className="justify-between gap-4 sm:flex pb-3">
         <h4 className="text-sm font-semibold text-black dark:text-white">
           List of items to buy
@@ -58,7 +58,7 @@ const BuyItemsCard: React.FC = () => {
       <div className="grid grid-cols-12 gap-3 items-center justify-center">
         {shoppingList.map((item, index) => (
           <div
-            className="flex col-span-12 xl:col-span-6 justify-between items-center bg-slate-100 p-2 rounded-xl"
+            className="flex col-span-12 xl:col-span-6 justify-between items-center bg-slate-100 dark:bg-slate-900 p-2 rounded-xl"
             key={index}
           >
             <div className="flex justify-center items-center">
