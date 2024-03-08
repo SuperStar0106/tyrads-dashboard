@@ -3,7 +3,7 @@ import React from "react";
 const VisaCard: React.FC = () => {
   return (
     <div
-      className="col-span-12 sm:h-60 rounded-2xl border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-5"
+      className="col-span-12 h-60 xl-full rounded-2xl border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-5"
       style={{
         backgroundImage: 'url("/images/dashboard/visa.png")',
         backgroundPosition: "center",
