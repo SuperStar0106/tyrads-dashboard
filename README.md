@@ -1,8 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Name: Analytics Dashboard
+
+## Overview
+
+The Analytics Dashboard is a React-based web application designed to provide users with a comprehensive view of their analytics data. This project showcases the use of ApexCharts for creating interactive and visually appealing charts, including a donut chart for displaying analytics data in a compact and informative manner. The dashboard is themed to support both light and dark modes, ensuring a seamless user experience across different environments.
+
+## Features
+
+* Donut Chart: Displays analytics data in a visually engaging donut chart format, allowing users to quickly grasp the proportions of different categories.
+* Dynamic Theming: Supports both light and dark modes, enhancing the user experience by adapting to the user's preferred theme.
+* Responsive Design: Ensures the dashboard is accessible and visually appealing across a wide range of devices and screen sizes.
+* Customizable Legend: Allows for the customization of the legend text color, providing flexibility in styling the dashboard to match the application's theme.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+* Node.js (v14.0.0 or later)
+* npm (v6.14.0 or later)
+
+### Installation
+
+1.Clone the repository:
+
+```bash
+git clone https://github.com/SuperStar0106/tyrads-dashboard
+```
+
+2.Navigate to the project directory:
+
+```bash
+cd tyrads-dashboard
+```
+
+3.Install the dependencies:
+
+```bash
+npm install
+```
+
+4.Start the development server:
 
 ```bash
 npm run dev
@@ -14,23 +50,10 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Once the development server is running, open your web browser and navigate to `http://localhost:3000` to view the Analytics Dashboard.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Customization
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The Analytics Dashboard is designed to be easily customizable. You can modify the chart options, theming, and other aspects of the dashboard by editing the `options` object in the `AnalyticsCard` component.
